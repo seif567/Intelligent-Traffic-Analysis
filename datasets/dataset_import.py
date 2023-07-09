@@ -184,16 +184,16 @@ def runDataExtraction (xml,node_xml, output_filename):
         writer.writerows(dataset)
 
 
-xml= "./Alex/osm.net.xml/osm.net.xml"
-node_xml="./Alex/osm.net.xml/true.nod.xml"
-output_filename= "dataset-alex-tl2.csv"
+xml= "C:/Users/hisha/Desktop/GraduationProject/AlSTScenario/osm.net.xml/osm.net.xml"
+node_xml="C:/Users/hisha/Desktop/GraduationProject/AlSTScenario/osm.net.xml/true.nod.xml"
+output_filename= "alex_dataset.csv"
 dataset= []
 
 runDataExtraction(xml,node_xml, output_filename)
 
-xml="./LuSTScenario-master/scenario/lust.net.xml"
-node_xml="./LuSTScenario-master/scenario/true.nod.xml"
-output_filename= "dataset-lust-tl2.csv"
+xml="C:/Users/hisha/Desktop/GraduationProject/LuSTScenario-master/LuSTScenario-master/scenario/lust.net.xml"
+node_xml="C:/Users/hisha/Desktop/GraduationProject/LuSTScenario-master/LuSTScenario-master/scenario/true.nod.xml"
+output_filename= "lust_dataset.csv"
 dataset=[]
 
 runDataExtraction(xml,node_xml, output_filename)

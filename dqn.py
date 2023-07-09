@@ -32,14 +32,14 @@ class config():
 
 df = None
 if scenario == "lust":
-    lust_file_name = "./datasets/dataset-lust-tl-clusters.csv"
+    lust_file_name = "./datasets/lust_dataset_analysed.csv"
     path = "D:/Intelligent-Traffic-Analysis/LuSTScenario-master/LuSTScenario-master/scenario/due.static.sumocfg"
     lust_raw_df = pd.read_csv(lust_file_name)
     lust_raw_df['trafficlight_count'] = lust_raw_df['trafficlight_count'].map(lambda x: ast.literal_eval(x))
     df = lust_raw_df
 else:
     path = "D:/Traffic-Management-System-CCE/Alex/osm.sumocfg"
-    alex_file_name = "./datasets/dataset-alex-tl-clusters.csv"
+    alex_file_name = "./datasets/alex_dataset_analysed.csv"
     alex_raw_df = pd.read_csv(alex_file_name)
     alex_raw_df['trafficlight_count'] = alex_raw_df['trafficlight_count'].map(lambda x: ast.literal_eval(x))
     df = alex_raw_df
